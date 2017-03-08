@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="jquery.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div class="green"></div>
+	<select>
+		<option value="orange">orange</option>
+		<option value="pink">pink</option>
+		<option value="red">red</option>
+		<option value="yellow">yellow</option>
+	</select>
+	<script>
+	$('select').change(function(){
+		var color = $('select').val();
+		$('div').css('background-color', color);
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="jquery.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h1 class="first">Hello...</h1>
+<button id="btn">click</button>
+	<script>
+
+		$(document).ready(function(){
+			$('#btn').click(function(){
+				$('h1').animate({opacity: 0.25});
+			});
+		});
+	</script>
+</body>
+</html>

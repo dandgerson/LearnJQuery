@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="jquery.min.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<img src="jquery-dev-summit-mark.gif" alt="">
+	<button>click</button>
+
+	<script>
+	$('button').click(function(){
+		$('img').animate({'width':'+=200','height':'+=120'}, 3000);
+	});
+	</script>
+</body>
+</html>
